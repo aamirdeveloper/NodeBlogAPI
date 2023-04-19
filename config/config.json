@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "blog_api",
-    "host": "127.0.0.1",
+    "username": "u498357097_nodeapiaamir",
+    "password": "X;5lu068!nK",
+    "database": "u498357097_nodeAPI",
+    "host": "156.67.222.148",
     "dialect": "mysql"
   },
   "test": {
