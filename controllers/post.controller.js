@@ -34,7 +34,7 @@ function save(req, res){
         });
     }).catch(error => {
         res.status(500).json({
-            message: "Something went wrong",
+            message: "Something went wrong save",
             error: error
         });
     });
@@ -53,7 +53,7 @@ function show(req, res){
         }
     }).catch(error => {
         res.status(500).json({
-            message: "Something went wrong!"
+            message: "Something went wrong! show"
         });
     });
 }
@@ -122,7 +122,7 @@ function destroy(req, res){
         });
     }).catch( error => {
         res.status(500).json({
-            message: "Something went wrong!",
+            message: "Something went wrong! destroy",
             error:error
         })
     });
