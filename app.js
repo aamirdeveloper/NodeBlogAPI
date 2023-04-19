@@ -12,7 +12,9 @@ const postsRoute = require('./routes/posts');
 const userRoute = require('./routes/user');
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: 'http:localhost/'
+}));
 
 app.use("/posts", postsRoute);
 app.use("/user", userRoute);
