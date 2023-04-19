@@ -1,4 +1,5 @@
-let mysql = require('mysql');
+let mysql = require('./node_modules/mysql2');
+
 
 let connection = mysql.createConnection({
     host: '156.67.222.148',
