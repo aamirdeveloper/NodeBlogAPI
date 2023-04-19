@@ -13,7 +13,7 @@ const userRoute = require('./routes/user');
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'http:localhost/'
+  origin: 'https://dev-zilla.com/'
 }));
 
 app.use("/posts", postsRoute);
