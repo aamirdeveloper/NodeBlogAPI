@@ -16,7 +16,7 @@ function signUp(req, res){
                         name: req.body.name,
                         email: req.body.email,
                         password: hash
-                    }
+                    };
                 
                     models.User.create(user).then(result => {
                         res.status(201).json({
