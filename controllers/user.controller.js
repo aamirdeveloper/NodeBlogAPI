@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 function signUp(req, res){
 
-    models.User.findOne({where:{email: req.body.email}}).then(result => {
+    models.user.findOne({where:{email: req.body.email}}).then(result => {
         if(result){
             res.status(409).json({
                 message: "Email already exists!!"
@@ -40,7 +40,7 @@ function signUp(req, res){
 
 //Login function
 function login(req, res){
-    models.User.findOne({where:{email:req.body.email}}).then(result =>{
+    models.user.findOne({where:{email:req.body.email}}).then(result =>{
         if(result === null){
             res.status(401).json({
                 message: "Invalid Credentials"
