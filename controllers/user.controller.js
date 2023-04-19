@@ -24,7 +24,7 @@ function signUp(req, res){
                         });
                     }).catch(error => {
                         res.status(500).json({
-                            message: "Something went wrong!"
+                            message: "Something went wrong! signUp"
                         });
                     });
                 });
@@ -32,7 +32,8 @@ function signUp(req, res){
         }
     }).catch(error => {
         res.status(500).json({
-            message: "Something went wrong"
+            message: "Something went wrong signUp 2",
+			error: error
         });
     });
 }
@@ -65,7 +66,8 @@ function login(req, res){
         }
     }).catch(error => {
         res.status(500).json({
-            message: "Something went wrong"
+            message: "Something went wrong login",
+			error: error
         });
     });
 }
