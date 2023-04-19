@@ -2,7 +2,6 @@ const Validator = require('fastest-validator');
 const models = require('../models'); 
 
 function save(req, res){
-    console.log(req);
     const post = {
         title: req.body.title,
         content: req.body.content,
