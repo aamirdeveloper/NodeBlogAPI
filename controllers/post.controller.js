@@ -69,6 +69,7 @@ function index(req, res){
     });
 }
 
+
 function update(req, res){
     const id = req.params.id;
     const updatedPosts = {
