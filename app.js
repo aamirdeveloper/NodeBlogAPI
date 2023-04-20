@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
@@ -12,9 +13,7 @@ const postsRoute = require('./routes/posts');
 const userRoute = require('./routes/user');
 
 app.use(bodyParser.json());
-app.use(cors({
-  origin: 'https://dev-zilla.com/'
-}));
+
 
 app.use("/posts", postsRoute);
 app.use("/user", userRoute);
