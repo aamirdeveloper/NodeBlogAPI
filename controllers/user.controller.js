@@ -6,7 +6,8 @@ function signUp(req, res){
 
     models.User.findOne({where:{email: req.body.email}}).then(result => {
         if(result){
-            res.status(409).json({
+            res.status(201).json({
+				status: "0",
                 message: "Email already exists!!"
             });
         }else{
@@ -20,6 +21,7 @@ function signUp(req, res){
                 
                     models.User.create(user).then(result => {
                         res.status(201).json({
+							status: "1",
                             message: "Registration successfull"
                         });
                     }).catch(error => {
