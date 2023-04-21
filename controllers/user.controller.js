@@ -42,7 +42,7 @@ function signUp(req, res){
 function login(req, res){
     models.User.findOne({where:{email:req.body.email}}).then(result =>{
         if(result === null){
-            res.status(409).json({
+            res.status(200).json({
                 message: "Invalid Credentials"
             });
         }else{
@@ -58,7 +58,7 @@ function login(req, res){
                         });
                     });
                 }else{
-                    res.status(409).json({
+                    res.status(200).json({
                         message: "Invalid Credentials"
                     });
                 }
