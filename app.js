@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost'
+  origin: 'http://localhost/finbank/admin'
 }));
 
 app.use(express.json());
