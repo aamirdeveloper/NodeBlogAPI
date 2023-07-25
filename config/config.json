@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "u498357097_nodeapiaamir",
-    "password": "X;5lu068!nK",
-    "database": "u498357097_nodeAPI",
-    "host": "156.67.222.148",
+    "username": "doadmin",
+    "password": "AVNS_LffLmLLwvVf09Fr2ncI",
+    "database": "defaultdb",
+    "host": "db-mysql-nyc1-73147-do-user-14378294-0.b.db.ondigitalocean.com",
     "dialect": "mysql"
   },
   "test": {
-     "username": "u498357097_nodeapiaamir",
-    "password": "X;5lu068!nK",
-    "database": "u498357097_nodeAPI",
-    "host": "156.67.222.148",
+     "username": "doadmin",
+    "password": "AVNS_LffLmLLwvVf09Fr2ncI",
+    "database": "defaultdb",
+    "host": "db-mysql-nyc1-73147-do-user-14378294-0.b.db.ondigitalocean.com",
     "dialect": "mysql"
   },
   "production": {
-     "username": "u498357097_nodeapiaamir",
-    "password": "X;5lu068!nK",
-    "database": "u498357097_nodeAPI",
-    "host": "156.67.222.148",
+     "username": "doadmin",
+    "password": "AVNS_LffLmLLwvVf09Fr2ncI",
+    "database": "defaultdb",
+    "host": "db-mysql-nyc1-73147-do-user-14378294-0.b.db.ondigitalocean.com",
     "dialect": "mysql"
   }
 }
